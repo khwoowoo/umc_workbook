@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+  <div>
+    <ul th:each="post : ${list}">
+      <a th:href="@{'/postView/' + ${post.id}}" th:text="${post.title}">게시물 제목</a>
+    </ul>
+  </div>
+</div> <!-- /container -->
+</body>
+</html>
